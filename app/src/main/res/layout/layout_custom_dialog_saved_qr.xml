@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="Sukses menyimpan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        tools:text="Tes_Tes - 2020-20-20.pdf" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_open_file"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="Buka File"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_right"
+        app:iconGravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_share_file"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="Bagikan File"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_right"
+        app:iconGravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_close"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="Selesai"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+
+</LinearLayout>

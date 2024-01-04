@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:id="@+id/tv_alber_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="Forklift 60-8FD30 V3M"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_history"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="@string/maintenance_history"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_right"
+        app:iconGravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_specs"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="@string/alber_specs"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_right"
+        app:iconGravity="end"
+        app:layout_constraintTop_toBottomOf="@id/btn_history"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_delete_alber"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:backgroundTint="@color/white"
+        android:text="@string/delete_alber"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@id/btn_history"
+        app:rippleColor="@color/gray"
+        app:strokeColor="@color/orange" />
+
+</LinearLayout>
+

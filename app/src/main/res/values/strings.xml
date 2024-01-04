@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Heavy Equipment</string>
+    <string name="landing_desc">Sepenuh hati membantu memonitoring kondisi alat berat anda secara cermat dan real time</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="maintenance_history">Cek Perbaikan</string>
+    <string name="alber_specs">Spesifikasi Alat Berat</string>
+    <string name="add_maintenance">Tambah Perbaikan</string>
+    <string name="menu">Menu</string>
+
+    <string name="unable">Unable</string>
+    <string name="use">Use</string>
+    <string name="unauthorized">HTTP 401</string>
+
+    <string name="error_no_internet">Tidak ada koneksi internet!</string>
+    <string name="error_email_invalid">Email sudah dipakai!</string>
+    <string name="error_account_invalid">Email atau Password salah!</string>
+    <string name="error_empty_alber">Alat berat masih kosong\nsilahkan Scan terlabih dahulu</string>
+    <string name="error_failed_fetch">Gagal memuat data\nsilahkan muat ulang</string>
+    <string name="error_scan_alber">Gagal menambahkan alat berat!</string>
+
+    <string name="reload">Muat Ulang</string>
+    <string name="dummy_date">20 Juli 2023, 5624 KM</string>
+    <string name="tambah_perbaikan">Tambah Perbaikan</string>
+    <string name="riwayat_perbaikan">Riwayat Perbaikan</string>
+    <string name="empty_history">Riwayat masih kosong!</string>
+    <string name="delete_alber">Hapus Alat Berat</string>
+</resources>

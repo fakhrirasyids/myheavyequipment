@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.main.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/logo_text_1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/drawable_icon_button_bg" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Halo, John Doe"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_welcoming_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_top_rounded"
+                    android:backgroundTint="@color/lightOrange"
+                    android:padding="@dimen/_12sdp">
+
+                    <TextView
+                        android:id="@+id/tv_welcoming_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Ingin tau kondisi unit anda?"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/iv_welcoming_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_welcoming_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:text="Pastikan unit anda selalu pada kondisi baik sebelum bekerja"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/iv_welcoming_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_welcoming_title" />
+
+                    <ImageView
+                        android:id="@+id/iv_welcoming_image"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_welcoming_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_welcoming_title"
+                        android:src="@drawable/hand_image"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_welcoming_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_bottom_rounded"
+                    android:backgroundTint="@color/gray"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_option_link"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_transparent_background"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:text="Opsi Tautan"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/drawable_doubledown_icon"
+                        app:iconGravity="start"
+                        app:iconPadding="@dimen/_10sdp"
+                        app:iconTint="@color/black" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_qr_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_transparent_background"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:text="Scan Me"
+                        android:textColor="@color/black"
+                        app:icon="@drawable/drawable_qrcode_icon"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="@dimen/_10sdp"
+                        app:iconTint="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="Daftar Alat Berat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_alber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:listitem="@layout/item_row_alber" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_empty_alber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:gravity="center"
+                android:text="@string/error_empty_alber"
+                android:textColor="@color/darkGray"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/reload"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/_12sdp"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="CONTENT_DESCRIPTION"
+        android:text="@string/menu"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_menu"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_menu_add_alber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="Menu Add Alber"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fab_menu"
+        app:layout_constraintEnd_toEndOf="@+id/fab_menu"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/fab_tv_add_alber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:background="@drawable/background_rounded"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/_4sdp"
+        android:padding="@dimen/_6sdp"
+        android:text="Tambah Alat Berat"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_menu_add_alber"
+        app:layout_constraintEnd_toStartOf="@+id/fab_menu_add_alber"
+        app:layout_constraintTop_toTopOf="@+id/fab_menu_add_alber" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_menu_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="Menu Account"
+        android:visibility="gone"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fab_menu_add_alber"
+        app:layout_constraintEnd_toEndOf="@+id/fab_menu_add_alber"
+        app:srcCompat="@drawable/ic_account"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/fab_tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:background="@drawable/background_rounded"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/_4sdp"
+        android:padding="@dimen/_6sdp"
+        android:text="Profil"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_menu_account"
+        app:layout_constraintEnd_toStartOf="@+id/fab_menu_account"
+        app:layout_constraintTop_toTopOf="@+id/fab_menu_account" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

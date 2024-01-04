@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_24sdp"
+    tools:context=".ui.screens.auth.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_text_1" />
+
+    <com.project.myheavyequipment.ui.customview.CustomEtEmail
+        android:id="@+id/ed_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:elevation="@dimen/_4sdp"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_10sdp" />
+
+    <com.project.myheavyequipment.ui.customview.CustomEtPassword
+        android:id="@+id/ed_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:elevation="@dimen/_4sdp"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_10sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:enabled="false"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        app:rippleColor="@color/gray" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:visibility="gone" />
+
+</LinearLayout>
